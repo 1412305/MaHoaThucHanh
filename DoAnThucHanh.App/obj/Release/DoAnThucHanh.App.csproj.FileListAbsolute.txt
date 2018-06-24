@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Release\DoAnThucHanh.App.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Release\DoAnThucHanh.App.Views.MainForm.resources
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Release\DoAnThucHanh.App.Properties.Resources.resources
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Release\DoAnThucHanh.App.Views.SignUpForm.resources
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Release\DoAnThucHanh.App.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Release\DoAnThucHanh.App.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\bin\Release\DoAnThucHanh.App.exe.config
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\bin\Release\DoAnThucHanh.App.exe
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\bin\Release\DoAnThucHanh.App.pdb
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Release\DoAnThucHanh.App.exe
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Release\DoAnThucHanh.App.pdb

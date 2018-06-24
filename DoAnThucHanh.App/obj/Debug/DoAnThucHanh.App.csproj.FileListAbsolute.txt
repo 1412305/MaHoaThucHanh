@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\bin\Debug\DoAnThucHanh.App.exe.config
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\bin\Debug\DoAnThucHanh.App.exe
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\bin\Debug\DoAnThucHanh.App.pdb
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.MainForm.resources
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Properties.Resources.resources
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.SignUpForm.resources
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.exe
+C:\Users\Admin\Desktop\1412242_1412305_DoAn\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.pdb
