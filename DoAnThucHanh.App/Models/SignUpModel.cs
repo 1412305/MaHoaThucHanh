@@ -10,15 +10,19 @@ namespace DoAnThucHanh.App.Models
     {
         public UserDto User { get; set; }
         public int? KeySize { get; set; }
-        private XmlService xmlService { get; set; }
-        public RSAService RSAService { get; set; }
+        private XmlService XmlService { get; set; }
+        private RSAService RSAService { get; set; }
+        private HashService HashService { get; set; }
         private static string DatabaseDir = Path.Combine(Environment.CurrentDirectory, "Database");
 
         public SignUpModel()
         {
-            User = new UserDto();
-            xmlService = new XmlService();
+            XmlService = new XmlService();
             RSAService = new RSAService();
+            HashService = new HashService();
+
+            User = new UserDto();
+            User.Salt = Guid.NewGuid().ToString();
         }
 
         public bool SignUp()
@@ -43,11 +47,12 @@ namespace DoAnThucHanh.App.Models
                 var keyPair = RSAService.GenerateKeyPair((int)this.KeySize);
                 User.PrivateKey = keyPair.PrivateKey;
                 User.PublicKey = keyPair.PublicKey;
+                User.Passphrase = HashService.SHA256Hash(User.Passphrase, User.Salt);
 
-                xmlService.WriteToXml<UserDto>(filePath, User);
+                XmlService.WriteToXml<UserDto>(filePath, User);
                 this.InfoMessage = "Sign up successfully";
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 this.WarningMessage = "There was an error creating your account";
                 return false;
