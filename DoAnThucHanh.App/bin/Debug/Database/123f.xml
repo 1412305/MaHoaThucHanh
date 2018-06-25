@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserDto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Email>123f</Email>
+  <Passphrase>2hdumU0cJDv5g2GraowOyBleOKp60AE71uYUDzX43ZI=</Passphrase>
+  <Salt>eeff081c-33bf-4c36-8fe5-32084a65947c</Salt>
+  <PublicKey>&lt;RSAKeyValue&gt;&lt;Modulus&gt;wZsJJ65UNDYigCpJMjgRVMm719tkPQe3wX3gV0b9AEVF6gvtoBkyUWPFvxjrfS2mLTu2nVSezmxCL7D088RQLQ==&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;/RSAKeyValue&gt;</PublicKey>
+  <PrivateKey>baEmbDGg/bDX4jmjZmfjf1qNBUFnLpVikMPWI79hfmXk0QC3HzsP5WHoboAFdKjUzDfRs6nYba9trRmsY566R1yO61mRy7s9uGrFC0OUopIAmKBFIAOczmY1q9VM8NUKnxXMbWZIzAZ9weETG+3390j4b8irThnp+LD3yU9ks4v0r0MMwdvQ8ll/92ehXWLgt3B2tzUv4B0fBTH1qVdLCDSHC5tnYhsXaIC/rJ7gLTTmfM+S3MehLoDStZe5dSHEYYjdIbWsQhiI+Ojsj8xcgd8p22BNdjycRYZDSBvDe4gnA6xcZqJGPKDWtfJSCM0RFFUjwHDJq7iyk+CMqCZCNYGq0P6247f5/yapMA/DETaLXqtIH6D6fgjimaeWqzF60pwCjdEdJwrPBio+eY9DVF+smqmhVJQuYOIbGVQOGWsPJC9QqKAWDv9kWgO5L4U1rnX4zpzV1EEjTsaTBEZ3GY8R68ypt3u5P8RmIDIodtZmeNA0Xg6I+GuafI3sb0uRXA5T6cMiE6P1cN+UAS24Omf8Nl5gpylMN9Vo5EO0uINtTlGnm1RElbTwtm9tEybqfaBr67fuKt5CfgvA8I/Ey7Q+lppxigjUuROrUP475fZGTRYvXLU0OyM2+xPA+3ZTFfNlG68KrLEQEM7hsnsY2IhoFxq5y5LbqL0jBLD8z9jPMG2BCHkFPCQUZFRs+cWe</PrivateKey>
+</UserDto>

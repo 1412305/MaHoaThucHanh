@@ -10,7 +10,7 @@ namespace DoAnThucHanh.App.Views
     {
         private SignUpModel Model { get; set; }
         private const int MinKeySize = 512;
-        private const int MaxKeySize = 1014;
+        private const int MaxKeySize = 1024;
 
         #region Constructor
         public SignUpForm()
@@ -24,7 +24,7 @@ namespace DoAnThucHanh.App.Views
         private void SignUpForm_Load(object sender, EventArgs e)
         {
             var keySizes = new List<TextValuePair>();
-            for (int i = MinKeySize; i <= MaxKeySize + 1; i += 64)
+            for (int i = MinKeySize; i <= MaxKeySize; i += 64)
             {
                 var keyValuePair = new TextValuePair(i.ToString(), i);
                 keySizes.Add(keyValuePair);
@@ -53,8 +53,29 @@ namespace DoAnThucHanh.App.Views
             this.Model.KeySize = (int?)this.keySizeCb.SelectedValue;
         }
 
+        private void nameTxt_TextChanged(object sender, EventArgs e)
+        {
+            this.Model.User.Name = this.nameTxt.Text;
+        }
+
+        private void addressTxt_TextChanged(object sender, EventArgs e)
+        {
+            this.Model.User.Address = this.addressTxt.Text;
+        }
+
+        private void phoneTxt_TextChanged(object sender, EventArgs e)
+        {
+            this.Model.User.Phone = this.phoneTxt.Text;
+        }
+
+        private void birthTxt_ValueChanged(object sender, EventArgs e)
+        {
+            this.Model.User.Birth = this.birthTxt.Text;
+        }
+
         private void signUpButton_Click(object sender, EventArgs e)
         {
+            this.Model.WarningMessage = string.Empty;
             var isSucessful = this.Model.SignUp();
 
             if (isSucessful)
@@ -63,17 +84,18 @@ namespace DoAnThucHanh.App.Views
                              "Sign Up",
                              MessageBoxButtons.OK,
                              MessageBoxIcon.Information);
+                this.DialogResult = DialogResult.OK;
             }
-            else
+
+            if (!string.IsNullOrWhiteSpace(this.Model.WarningMessage))
             {
                 MessageBox.Show(this.Model.WarningMessage,
                               "Sign Up",
                               MessageBoxButtons.OK,
                               MessageBoxIcon.Warning);
             }
-
-            this.DialogResult = DialogResult.Cancel;
         }
         #endregion
+
     }
 }

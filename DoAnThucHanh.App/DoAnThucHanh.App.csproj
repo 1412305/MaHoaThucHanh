@@ -50,6 +50,7 @@
     <Compile Include="DTOs\UserDto.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Services\HashService.cs" />
+    <Compile Include="Services\RijndaelService.cs" />
     <Compile Include="Services\RSAService.cs" />
     <Compile Include="Services\XmlService.cs" />
     <Compile Include="Models\MainFormModel.cs" />

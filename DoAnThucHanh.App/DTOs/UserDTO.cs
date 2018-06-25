@@ -2,6 +2,14 @@
 {
     public class UserDto
     {
+        public UserDto()
+        {
+            Name = "";
+            Birth = "";
+            Phone = "";
+            Address = "";
+        }
+
         public string Name { get; set; }
 
         public string Birth { get; set; }

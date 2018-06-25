@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserDto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name />
+  <Birth />
+  <Phone />
+  <Address />
+  <Email>luongbuic@gmail.com</Email>
+  <Passphrase>lsrjXOipsCRBeL8o5JZsLOG4OFcjqWprg4hYzdbKCh4=</Passphrase>
+  <Salt>0d9ceaf4-931a-4d5e-b742-ebd065d8241c</Salt>
+  <PublicKey>PFJTQUtleVZhbHVlPjxNb2R1bHVzPnVkakNuc2g1ZVY2bmtnRWY4UE0wbkZ6K3VFTSs0SytmQVlzNkJNVVI2c3NHOTJMaC95N2J1TlYyYmpFVSt6QjVJT3NueEtndjBZaTk5OU5iOUVXZytRPT08L01vZHVsdXM+PEV4cG9uZW50PkFRQUI8L0V4cG9uZW50PjwvUlNBS2V5VmFsdWU+</PublicKey>
+  <PrivateKey>/TjJmnlO8iqbjpy1UFrWShSyp5uFALHZHXp4mpeDFjWcYP6kVsgOX6saENtooJts6K36oY6dAbr1YJ2I3mm5y5aheIHdlOuJlCqALSkjD1pCov1nj5qAhl5H0eJorxYRcKXPodOuB8HRolZZlemSbT/1drUDSMuvkyKBX8ojjWtcwQ9q7pf0zbUOHT95GUDezU5lA1gNSK6Cg1xBCALf4UBwiowyrf3U7kWHDZvlqOAOQQrpftgajOfulcqzYhe1kjyf1hV2XI7dtW063IU0Az1RWTwY6uHwHwHEnX39ATv4EIOO1krs6yC0GZ/ZxHTx8R5As7sl+OkM1hSIz3yoY3c1J449LUvbQeCr/Vrugi4zeXITlVE1ltXKrMMlGUlIvgZAF/PczBHagP3/cg+rhjiHHRmmlHppQaolMj4a37oc7V5LeGDsaoXr5s7uIEVALMxndAQlqkIb8P9txsIOO0PVvfBfdh0XQFlqaLnkiJGchux75kR4Gy5ZqXoJ1FoO5+4FndlQPhBdeN3GhJEzERu1wd95L033sbkLPgBsYLajBcxqW29DeGaVkryRjZPqp8civorvqDcx///0ljBqdVR04CWiSubGg5MZeqm48sObXhHYKfyMsrDeCgjkLp7AqoeiUx0tBn0UTBzjF30HTRIEZPKJSOBBxfU/lGScPRhScI4lhEEjSNgHdDvAm0zY</PrivateKey>
+</UserDto>
