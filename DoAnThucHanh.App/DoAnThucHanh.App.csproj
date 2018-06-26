@@ -49,12 +49,20 @@
     <Compile Include="DTOs\TextValuePair.cs" />
     <Compile Include="DTOs\UserDto.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\UserUpdateModel.cs" />
     <Compile Include="Services\HashService.cs" />
     <Compile Include="Services\RijndaelService.cs" />
     <Compile Include="Services\RSAService.cs" />
     <Compile Include="Services\XmlService.cs" />
     <Compile Include="Models\MainFormModel.cs" />
     <Compile Include="Models\SignUpModel.cs" />
+    <Compile Include="Views\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +77,15 @@
     <Compile Include="Views\SignUpForm.Designer.cs">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserUpdateForm.Designer.cs">
+      <DependentUpon>UserUpdateForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +100,9 @@
     </Compile>
     <EmbeddedResource Include="Views\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserUpdateForm.resx">
+      <DependentUpon>UserUpdateForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -20,3 +20,16 @@ C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App
 C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.exe
 C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.pdb
+D:\MaHoaThucHanh\DoAnThucHanh.App\bin\Debug\DoAnThucHanh.App.exe.config
+D:\MaHoaThucHanh\DoAnThucHanh.App\bin\Debug\DoAnThucHanh.App.exe
+D:\MaHoaThucHanh\DoAnThucHanh.App\bin\Debug\DoAnThucHanh.App.pdb
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.csprojAssemblyReference.cache
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.MainForm.resources
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Properties.Resources.resources
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.SignUpForm.resources
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.csproj.GenerateResource.cache
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.csproj.CoreCompileInputs.cache
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.exe
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.pdb
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.LoginForm.resources
+D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.UserUpdateForm.resources

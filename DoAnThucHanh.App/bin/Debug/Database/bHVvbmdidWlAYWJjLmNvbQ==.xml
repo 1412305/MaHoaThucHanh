@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserDto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>bui</Name>
+  <Birth />
+  <Phone>1231232</Phone>
+  <Address>asndkjnsakfjn</Address>
+  <Email>luongbui@abc.com</Email>
+  <Passphrase>lsrjXOipsCRBeL8o5JZsLOG4OFcjqWprg4hYzdbKCh4=</Passphrase>
+  <Salt>4a3e8ffe-a3a6-4cbd-982c-d1257c025358</Salt>
+  <PublicKey>PFJTQUtleVZhbHVlPjxNb2R1bHVzPnpzeXR4ZEYxTFA1amhIbEhoSHYrN2p1TUdwQ01nNGZ4VGlHTVM2bUtxOUp6ZlFRdUUwUlVXaTRBRWJ4ZWNmUUMrT0FzdHhrZVl3ZFNTL3U0alNMQmxmRHNBWDFJMTQxUjwvTW9kdWx1cz48RXhwb25lbnQ+QVFBQjwvRXhwb25lbnQ+PC9SU0FLZXlWYWx1ZT4=</PublicKey>
+  <PrivateKey>eH8hZBqFSBmVCXBc1PcPBMGwfyi+h8gVI3gDU/kuC7MNr89y+c+6PFkS3b57TcRYqDN6/Xa/RpInWAc2kJYOggrUlzvA/73zQryTa/6J79rYRN3jhxm+l8JPfWscj+t68V6FUsj7gonnFlNgbMvfaIe+C61PVltcsTDteCHUbUrygN4pH0nljH4NcH8xNqnQsKSlySXJeZsNXg5/fAwPZSdd5MB61dfX7E22FdnxM3Ojkeum022/BXgkZr4OhA5dDareuribCVeRuzTbLSlXt2xIQhuHDpMT7TbA9FOMOOgIV0AbUhyapHfR7VZcRy0H7Kvj1rLAnEOqpfpfirJ2v1EQoH7KGv/Wqp99nL6AFw5giANeREAebfEeoDdRQ65+/8X8Co+it4rcP7vx1nAjDOhH1CdoflBtbOscLSuzEvUwSXBxfOXvej8Lig7pAzhZDbcYMvbxnZf6kby+J0gzXYxB2pGiw/gAgY0DFF7CVXA3/s/Io6MRd+RjQknjSlYhs/bhyVfg0dBFyUYpJ3ZKtkRHLEggjCYMZQSYPYWJgv5LgbmcA0nB6fiOjTBDEq0spfY0T82T850VWaW7LtEPYcuhXMktsS/tMSZf0DQw3bJflGSE5IKzH72TxUVeYDCbnWDu/qVTLllu7ZB/mTJW7Z69xDNYBUup01yy8E/Re7xYEogV4Ue+VunDZfSJdUoON1fLjzIOgmwZy19z+jYqsydERh9EGxBwQij1Tq4Vko8O17dVfr8eFjvykUsOoiF+</PrivateKey>
+</UserDto>

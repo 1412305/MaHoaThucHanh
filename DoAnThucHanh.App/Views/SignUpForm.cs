@@ -85,6 +85,7 @@ namespace DoAnThucHanh.App.Views
                              MessageBoxButtons.OK,
                              MessageBoxIcon.Information);
                 this.DialogResult = DialogResult.OK;
+                this.Close();
             }
 
             if (!string.IsNullOrWhiteSpace(this.Model.WarningMessage))

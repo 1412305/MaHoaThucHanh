@@ -14,5 +14,11 @@ namespace DoAnThucHanh.App.Views
             var signUpForm = new SignUpForm();
             signUpForm.ShowDialog();
         }
+
+        private void updateToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            var loginForm = new LoginForm();
+            loginForm.ShowDialog();
+        }
     }
 }
