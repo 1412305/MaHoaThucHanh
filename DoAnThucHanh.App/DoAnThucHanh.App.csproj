@@ -45,9 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\ExportingUserDto.cs" />
     <Compile Include="DTOs\RSAKeyPair.cs" />
     <Compile Include="DTOs\TextValuePair.cs" />
     <Compile Include="DTOs\UserDto.cs" />
+    <Compile Include="Enums\FormEnum.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\UserUpdateModel.cs" />
@@ -117,6 +119,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Constants\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

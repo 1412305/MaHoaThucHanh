@@ -1,5 +1,7 @@
-﻿using DoAnThucHanh.App.Models;
+﻿using DoAnThucHanh.App.Enums;
+using DoAnThucHanh.App.Models;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace DoAnThucHanh.App.Views
@@ -7,6 +9,8 @@ namespace DoAnThucHanh.App.Views
     public partial class LoginForm : Form
     {
         public LoginModel Model { get; set; }
+        public FormEnum AuthenticateFor { get; set; }
+
         public LoginForm()
         {
             Model = new LoginModel();
@@ -30,9 +34,18 @@ namespace DoAnThucHanh.App.Views
 
             if (isValid)
             {
-                var updateForm = new UserUpdateForm();
-                updateForm.Model.User = this.Model.User;
-                updateForm.Show();
+                switch (AuthenticateFor)
+                {
+                    case FormEnum.UpdateForm:
+                        var updateForm = new UserUpdateForm();
+                        updateForm.Model.User = this.Model.User;
+                        updateForm.Show();
+                        break;
+                    case FormEnum.ExportKeyForm:
+                        this.ExportKeyPair();
+                        break;
+                }
+
                 this.Close();
             }
 
@@ -42,6 +55,23 @@ namespace DoAnThucHanh.App.Views
                               "Sign Up",
                               MessageBoxButtons.OK,
                               MessageBoxIcon.Warning);
+            }
+        }
+
+        private void ExportKeyPair()
+        {
+            var fileName = string.Empty;
+            using (var openFileDialog = new SaveFileDialog())
+            {
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    fileName = Path.ChangeExtension(openFileDialog.FileName, "xml");
+                    this.Model.ExportKeyPair(fileName);
+                    MessageBox.Show("Exported successfully",
+                            "Export",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                }
             }
         }
     }

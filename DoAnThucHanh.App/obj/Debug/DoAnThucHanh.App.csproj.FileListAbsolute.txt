@@ -33,3 +33,5 @@ D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.exe
 D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.pdb
 D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.LoginForm.resources
 D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.UserUpdateForm.resources
+C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.LoginForm.resources
+C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.UserUpdateForm.resources

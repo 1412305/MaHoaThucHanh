@@ -87,5 +87,10 @@ namespace DoAnThucHanh.App.Models
             this.WarningMessage = message.ToString();
             return result;
         }
+
+        public void ExportKeyPair(string fileName)
+        {
+            XmlService.WriteToXml(fileName, new ExportingUserDto(this.User));
+        }
     }
 }
