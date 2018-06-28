@@ -33,19 +33,19 @@ namespace DoAnThucHanh.App.Services
             disposed = true;
         }
 
-        public byte[] GenerateKey()
+        public byte[] RijndaelGenerateKey()
         {
             rijndael.GenerateKey();
             return rijndael.Key;
         }
 
-        public byte[] GenerateIV()
+        public byte[] RijndaelGenerateIV()
         {
             rijndael.GenerateIV();
             return rijndael.IV;
         }
 
-        public string EncryptData(string plainText, byte[] key, byte[] iv)
+        public string RijndaelEncryptData(string plainText, byte[] key, byte[] iv)
         {
             byte[] result;
             var encryptor = rijndael.CreateEncryptor(key, iv);

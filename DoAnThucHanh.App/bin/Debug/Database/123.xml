@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<UserDto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Email>123</Email>
-  <Passphrase>71ae17fc39e3d95cd83bcb98b1fc1554f33be9a3cd6e032b0264778f5d21c315</Passphrase>
-  <Salt>7b031e4c-bedb-4d25-8d51-c69007c3e1c2</Salt>
-  <PublicKey>&lt;RSAKeyValue&gt;&lt;Modulus&gt;rL5LCNw0sfT2V7A1oip7XDiXs53KSFDm4XUBAwcZHrMex6Hr6NSB6cTjZKWxJQ8++6DwQ1nLKSt9QQWjWJLAtQ==&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;/RSAKeyValue&gt;</PublicKey>
-  <PrivateKey>&lt;RSAKeyValue&gt;&lt;Modulus&gt;rL5LCNw0sfT2V7A1oip7XDiXs53KSFDm4XUBAwcZHrMex6Hr6NSB6cTjZKWxJQ8++6DwQ1nLKSt9QQWjWJLAtQ==&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;P&gt;xoUKKHjeCMLsItbKW9/+joMFhU8tTkIe+DQjS7xrd6s=&lt;/P&gt;&lt;Q&gt;3sKfI2EAzJT0C+AfbJnx2Cly9eCZNQ2+s1YYz5HOyR8=&lt;/Q&gt;&lt;DP&gt;KyixVKsyWmVGQSzBQcgo54LEqH7WMrVdVki/g6+rDZE=&lt;/DP&gt;&lt;DQ&gt;ZsIw1wkwbS9pRPEmjdqWDblRJsts4WRtzByzZU1FrtE=&lt;/DQ&gt;&lt;InverseQ&gt;wAUKOoCx6o3pabVD2kB3HKH54NYlxjRBYY4/jpxMv6o=&lt;/InverseQ&gt;&lt;D&gt;TN+easH8XVmDK0DKjXFUVpUExbUpqQb/yEOWgK9u+V7HkDCnoiCofICH+2zNPSHL52Y8u8pmRglAk5SaCuiZfQ==&lt;/D&gt;&lt;/RSAKeyValue&gt;</PrivateKey>
-</UserDto>

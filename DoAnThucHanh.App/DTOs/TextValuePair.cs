@@ -2,14 +2,14 @@
 {
     public class TextValuePair
     {
-        public TextValuePair(string text, int value)
+        public TextValuePair(object text, object value)
         {
             this.Text = text;
             this.Value = value;
         }
 
-        public string Text { get; set; }
+        public object Text { get; set; }
 
-        public int Value { get; set; }
+        public object Value { get; set; }
     }
 }

@@ -35,3 +35,5 @@ D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.LoginForm.res
 D:\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.UserUpdateForm.resources
 C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.LoginForm.resources
 C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.UserUpdateForm.resources
+C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.FileDecryptForm.resources
+C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.FileEncryptForm.resources

@@ -63,9 +63,9 @@ namespace DoAnThucHanh.App.Models
 
                 var keyPair = RSAService.GenerateKeyPair((int)this.KeySize);
                 User.Passphrase = HashService.SHA256Hash(User.Passphrase, User.Salt);
-                User.PrivateKey = RijndaelService.EncryptData(keyPair.PrivateKey,
+                User.PrivateKey = RijndaelService.RijndaelEncryptData(keyPair.PrivateKey,
                         Convert.FromBase64String(User.Passphrase),
-                        RijndaelService.GenerateIV());
+                        RijndaelService.RijndaelGenerateIV());
                 User.PublicKey = Convert.ToBase64String(Encoding.UTF8.GetBytes(keyPair.PublicKey));
 
                 XmlService.WriteToXml<UserDto>(filePath, User);

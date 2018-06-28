@@ -45,20 +45,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\EncryptingFileInfo.cs" />
     <Compile Include="DTOs\ExportingUserDto.cs" />
     <Compile Include="DTOs\RSAKeyPair.cs" />
     <Compile Include="DTOs\TextValuePair.cs" />
     <Compile Include="DTOs\UserDto.cs" />
     <Compile Include="Enums\FormEnum.cs" />
+    <Compile Include="Enums\Algorithm.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\FileEncryptModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\UserUpdateModel.cs" />
+    <Compile Include="Services\AesService.cs" />
+    <Compile Include="Services\DesService.cs" />
     <Compile Include="Services\HashService.cs" />
+    <Compile Include="Services\Rc2Service.cs" />
     <Compile Include="Services\RijndaelService.cs" />
     <Compile Include="Services\RSAService.cs" />
+    <Compile Include="Services\TripleDesService.cs" />
     <Compile Include="Services\XmlService.cs" />
     <Compile Include="Models\MainFormModel.cs" />
     <Compile Include="Models\SignUpModel.cs" />
+    <Compile Include="Views\FileDecryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FileDecryptForm.Designer.cs">
+      <DependentUpon>FileDecryptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FileEncryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FileEncryptForm.Designer.cs">
+      <DependentUpon>FileEncryptForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +104,12 @@
     <Compile Include="Views\UserUpdateForm.Designer.cs">
       <DependentUpon>UserUpdateForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FileDecryptForm.resx">
+      <DependentUpon>FileDecryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FileEncryptForm.resx">
+      <DependentUpon>FileEncryptForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

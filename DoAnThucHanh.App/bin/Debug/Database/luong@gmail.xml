@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<UserDto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Email>luong@gmail.com</Email>
-  <PublicKey>&lt;RSAKeyValue&gt;&lt;Modulus&gt;6swwrZewT8JeevLmTNEx6dFMLZpJssKZ4aZOXQvT5rd2o4e9CFtmnSUNw605rnk6c6WKXJnrcnWUAYXFz21eCQ==&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;/RSAKeyValue&gt;</PublicKey>
-  <PrivateKey>&lt;RSAKeyValue&gt;&lt;Modulus&gt;6swwrZewT8JeevLmTNEx6dFMLZpJssKZ4aZOXQvT5rd2o4e9CFtmnSUNw605rnk6c6WKXJnrcnWUAYXFz21eCQ==&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;P&gt;/rLfZ56qWp1H0i6JKadJ+T7Ub1ofSPT/ssQj4BWWm08=&lt;/P&gt;&lt;Q&gt;6/9JzPnZb7jw7Tt1lB94yu9RSkK1gcG0xQgenFcnuyc=&lt;/Q&gt;&lt;DP&gt;NdZfjMqoHcFTNiVqDujypQHX67W0GTrYddQp9Sr7C9c=&lt;/DP&gt;&lt;DQ&gt;L2ZQAV5xYLIpmcxmekCz9zaIAj1RzWUFlMljtI0AyuM=&lt;/DQ&gt;&lt;InverseQ&gt;wjiqr/Uvv0puWQ2Fef/+oK+qbRpqn/NuIxcjiRGH9bg=&lt;/InverseQ&gt;&lt;D&gt;mAUcf0h3Hyz5fyFFevb3Giwo5l2+2b6lYzQKCLRfvkBNGznZnJA83q6hC++syZmZeeYHgiJfzzB40wN9wCcTAQ==&lt;/D&gt;&lt;/RSAKeyValue&gt;</PrivateKey>
-</UserDto>

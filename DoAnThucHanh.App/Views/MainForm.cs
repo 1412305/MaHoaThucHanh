@@ -63,5 +63,25 @@ namespace DoAnThucHanh.App.Views
             }
         }
 
+        private void symetricEncryptToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            var fileEncryptForm = new FileEncryptForm();
+            fileEncryptForm.ShowDialog();
+        }
+
+        private void symetricDecryptToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void signToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void verifySignatureToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
