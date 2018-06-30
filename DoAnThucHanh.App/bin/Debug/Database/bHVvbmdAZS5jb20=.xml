@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserDto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Luong Bui</Name>
+  <Birth />
+  <Phone />
+  <Address />
+  <Email>luong@e.com</Email>
+  <Passphrase>lsrjXOipsCRBeL8o5JZsLOG4OFcjqWprg4hYzdbKCh4=</Passphrase>
+  <Salt>2e091f7c-61a0-4318-9fc0-d2627a893d0d</Salt>
+  <PublicKey>PFJTQUtleVZhbHVlPjxNb2R1bHVzPnUveGlCLzBOU2RGSlR3TGVod2xURTVheGp1eC9CZnVDK29jODRjeEhQbjdidlBPd1dwNUgzRHVjUFAxbFF3cjBZcE9UeGdOeEpaYUxVWUN5NVhrbnN1S2FtcENqM0d2ZFNreTBHdXFFdk5PSk9mcmdOZkhsRVdFYzU4MXJmRjJ0NlZsaU4xdmtydElFSWNmZ0I2eGlwYWMwaE04SnpaM0o8L01vZHVsdXM+PEV4cG9uZW50PkFRQUI8L0V4cG9uZW50PjwvUlNBS2V5VmFsdWU+</PublicKey>
+  <PrivateKey>MZ9f/Y9z6B58xGMjYPzWoEXJQ/C8rkfO694rMhBFjNwz32YkaO+8KI42PHTAaqMCuH0REeZOB9gbqQtjxSPE7v8btYzHAWUxEosEGz7qwiDXFB8TXql86nUVh8vlT8XExFiO03u/YwvEK/wYGZv7/6nGMAsdes1Xbx+gljgNxHtVxj2ckONTGXnpnNBEA5V8AEPcMbaXDx7Pusf38/quaH9rYTgX/8xnMtkbIuyEWJISwgt9wEjvsu/KFiSDKY8qaYB0ImLKryr2e2Vb3Ccfn1a+qWxxClCPo+hTYL+HrOdirnmz8bBtRnJM3uHUpUMYb01NmEOIHHY32+p4wEOSmgjm1zG3VuzzJ4AE4fPlJFUd5CWHx+1p1kp+tBY63CbG2YdgpVHqftZgY4rNSP1+/5CCFuX7XN4ox8dxfanp40vu861KpBSUydlZULTj8OqlvHPwgEB4Jwlb9jEd9jAZ0ZWeAXn6lcIDnTg6HCeOPorM+UC8q7AukwvbWi0ZnOgM2mQyJOOKAUxqGLL8Sl6YxF9L4eFtrO9XFdq+5qNCbDWER+aA0apyTRUH85/1dUI2BXKKiodjr+B5wq0F0I4y+hCXDLfwk5CwkvIGpXsZUAwiiReovkGZvmFlDNkohYBz9skXoUwUyLO7Z66O2gJxg/DxEHacjCk+KfA3SsPgAP+Xt+1dCXwgfNVcaO67tul998dxlGahqfln6o3FiDW9uSg6AB5dVyxNIoNpHLYDZIQtrRVk1khFcSKti2f3cEYeV5VnzViKB0/p7MzEiucSv5WKju4+AA2XbD+Fck9GaTa35Ou7hblDyEn3llo0jPFVOkuUbyq7MI81yzUfSB47ULIFinNHvcQ18AGNVnGNZjSMnFRMju8FgFw97pVfchvTudaZrZu2H2MElktWqGik9wsRApi3bpR5pnfQ56yjDViJT+/cv7D5vj60ffLcryWid5/jffhXylsIOPuN//f7kY6ZIqHPghsUnu2jTAKZcAHCXcJuvaLkzURTkgFIbOxknoN45KlHP2QGos3e01KJsfSENhLPCbzEqaHeTsLcXhEzyIXZXx/EcrzFPWPyiGY7vKauxDP/Q0FXn4uZlsMxDp3XMNLEBLu/YjSJ5Bd0mRtU1H6EcDqGaskAIwjvQxR1</PrivateKey>
+  <IV>6sMf5HMObiBljiSiHJRMOA==</IV>
+</UserDto>

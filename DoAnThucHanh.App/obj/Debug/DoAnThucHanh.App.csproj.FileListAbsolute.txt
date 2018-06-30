@@ -37,3 +37,5 @@ C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App
 C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.UserUpdateForm.resources
 C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.FileDecryptForm.resources
 C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.FileEncryptForm.resources
+C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.FileSignForm.resources
+C:\Users\Admin\Desktop\MaHoaThucHanh\DoAnThucHanh.App\obj\Debug\DoAnThucHanh.App.Views.FileVerifySignatureForm.resources

@@ -44,6 +44,16 @@ namespace DoAnThucHanh.App.Views
                     case FormEnum.ExportKeyForm:
                         this.ExportKeyPair();
                         break;
+                    case FormEnum.DecryptFileForm:
+                        var decryptFileForm = new FileDecryptForm();
+                        decryptFileForm.Model.User = this.Model.User;
+                        decryptFileForm.Show();
+                        break;
+                    case FormEnum.SignFileForm:
+                        var signFileForm = new FileSignForm();
+                        signFileForm.Model.User = this.Model.User;
+                        signFileForm.Show();
+                        break;
                 }
 
                 this.Close();

@@ -96,7 +96,26 @@ namespace DoAnThucHanh.App.Views
 
         private void encryptButton_Click(object sender, EventArgs e)
         {
-            this.Model.EncryptFile();
+            this.Model.WarningMessage = string.Empty;
+            var isSucessful = this.Model.EncryptFile();
+
+            if (isSucessful)
+            {
+                MessageBox.Show("Encrypted successfully",
+                             "File Encrypt",
+                             MessageBoxButtons.OK,
+                             MessageBoxIcon.Information);
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+
+            if (!string.IsNullOrWhiteSpace(this.Model.WarningMessage))
+            {
+                MessageBox.Show(this.Model.WarningMessage,
+                              "File Encrypt",
+                              MessageBoxButtons.OK,
+                              MessageBoxIcon.Warning);
+            }
         }
     }
 }

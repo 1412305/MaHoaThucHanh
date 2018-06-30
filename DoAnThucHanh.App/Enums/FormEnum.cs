@@ -3,6 +3,8 @@
     public enum FormEnum
     {
         UpdateForm,
-        ExportKeyForm
+        ExportKeyForm,
+        DecryptFileForm,
+        SignFileForm
     }
 }

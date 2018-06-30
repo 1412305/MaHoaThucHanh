@@ -4,36 +4,36 @@ using System.Windows.Forms;
 
 namespace DoAnThucHanh.App.Views
 {
-    public partial class FileDecryptForm : Form
+    public partial class FileVerifySignatureForm : Form
     {
-        public FileDecryptModel Model { get; set; }
+        public FileVerifySignatureModel Model { get; set; }
 
-        public FileDecryptForm()
+        public FileVerifySignatureForm()
         {
-            Model = new FileDecryptModel();
+            Model = new FileVerifySignatureModel();
             InitializeComponent();
         }
 
-        private void browseDecryptButton_Click(object sender, EventArgs e)
+        private void browseVerifyButton_Click(object sender, EventArgs e)
         {
             using (var dialog = new OpenFileDialog())
             {
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    this.Model.FileDecryptName = dialog.FileName;
-                    this.fileDecryptTxt.Text = dialog.FileName;
+                    this.Model.FileVerifyName = dialog.FileName;
+                    this.fileVerifyTxt.Text = dialog.FileName;
                 }
             }
         }
 
-        private void saveFileButton_Click(object sender, EventArgs e)
+        private void fileSignatureButton_Click(object sender, EventArgs e)
         {
-            using (var dialog = new SaveFileDialog())
+            using (var dialog = new OpenFileDialog())
             {
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    this.Model.FileSaveName = dialog.FileName;
-                    this.saveFileTxt.Text = dialog.FileName;
+                    this.Model.FileSignatureName = dialog.FileName;
+                    this.fileSignatureTxt.Text = dialog.FileName;
                 }
             }
         }
@@ -43,25 +43,23 @@ namespace DoAnThucHanh.App.Views
             this.Close();
         }
 
-        private void decryptButton_Click(object sender, EventArgs e)
+        private void verifyButton_Click(object sender, EventArgs e)
         {
             this.Model.WarningMessage = string.Empty;
-            var isSucessful = this.Model.DecryptFile();
+            var isSucessful = this.Model.VerifySignature();
 
             if (isSucessful)
             {
-                MessageBox.Show("Decrypted successfully",
-                             "File Decrypt",
+                MessageBox.Show(this.Model.InfoMessage,
+                             "Signature Verify",
                              MessageBoxButtons.OK,
                              MessageBoxIcon.Information);
-                this.DialogResult = DialogResult.OK;
-                this.Close();
             }
 
             if (!string.IsNullOrWhiteSpace(this.Model.WarningMessage))
             {
                 MessageBox.Show(this.Model.WarningMessage,
-                              "File Decrypt",
+                              "Signature Verify",
                               MessageBoxButtons.OK,
                               MessageBoxIcon.Warning);
             }

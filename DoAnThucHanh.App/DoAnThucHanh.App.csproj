@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,16 +55,15 @@
     <Compile Include="Enums\FormEnum.cs" />
     <Compile Include="Enums\Algorithm.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\FileDecryptModel.cs" />
     <Compile Include="Models\FileEncryptModel.cs" />
+    <Compile Include="Models\FileSignModel.cs" />
+    <Compile Include="Models\FileVerifySignatureModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\UserUpdateModel.cs" />
-    <Compile Include="Services\AesService.cs" />
-    <Compile Include="Services\DesService.cs" />
     <Compile Include="Services\HashService.cs" />
-    <Compile Include="Services\Rc2Service.cs" />
-    <Compile Include="Services\RijndaelService.cs" />
+    <Compile Include="Services\SymetricService.cs" />
     <Compile Include="Services\RSAService.cs" />
-    <Compile Include="Services\TripleDesService.cs" />
     <Compile Include="Services\XmlService.cs" />
     <Compile Include="Models\MainFormModel.cs" />
     <Compile Include="Models\SignUpModel.cs" />
@@ -77,6 +78,18 @@
     </Compile>
     <Compile Include="Views\FileEncryptForm.Designer.cs">
       <DependentUpon>FileEncryptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FileSignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FileSignForm.Designer.cs">
+      <DependentUpon>FileSignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FileVerifySignatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FileVerifySignatureForm.Designer.cs">
+      <DependentUpon>FileVerifySignatureForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginForm.cs">
       <SubType>Form</SubType>
@@ -109,6 +122,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FileEncryptForm.resx">
       <DependentUpon>FileEncryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FileSignForm.resx">
+      <DependentUpon>FileSignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FileVerifySignatureForm.resx">
+      <DependentUpon>FileVerifySignatureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

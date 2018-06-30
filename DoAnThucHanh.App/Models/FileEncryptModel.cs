@@ -4,6 +4,7 @@ using DoAnThucHanh.App.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -21,7 +22,7 @@ namespace DoAnThucHanh.App.Models
         public string FileSaveName { get; set; }
         public string Email { get; set; }
         private static readonly string DatabaseDir = Path.Combine(Environment.CurrentDirectory, "Database");
-        public AesService AesService { get; set; }
+        public SymetricService SymetricService { get; set; }
         public XmlService XmlService { get; set; }
 
         public FileEncryptModel()
@@ -31,7 +32,7 @@ namespace DoAnThucHanh.App.Models
             this.LoadAlgorithm();
             this.LoadPaddingModes();
             this.LoadCipherModes();
-            AesService = new AesService();
+            SymetricService = new SymetricService();
             XmlService = new XmlService();
         }
 
@@ -41,9 +42,7 @@ namespace DoAnThucHanh.App.Models
             {
                 new TextValuePair(CipherMode.CBC.ToString(), CipherMode.CBC),
                 new TextValuePair(CipherMode.CFB.ToString(), CipherMode.CFB),
-                new TextValuePair(CipherMode.CTS.ToString(), CipherMode.CTS),
                 new TextValuePair(CipherMode.ECB.ToString(), CipherMode.ECB),
-                new TextValuePair(CipherMode.OFB.ToString(), CipherMode.OFB)
             };
         }
 
@@ -91,44 +90,52 @@ namespace DoAnThucHanh.App.Models
 
             var extension = Path.GetExtension(this.FileEncryptName);
             FileSaveName = Path.ChangeExtension(this.FileSaveName, extension);
-            var publicKey = this.GetReceiverPublicKey(this.Email);
-            var emailByteArr = Encoding.UTF8.GetBytes(this.Email);
 
-            switch (this.EncryptInfo.Algorithm)
+            var publicKey = this.GetReceiverPublicKey(this.Email);
+            try
             {
-                case Algorithm.AES:
-                    AesService.AESEncryptFile(FileEncryptName,
+                SymetricService.EncryptFile(FileEncryptName,
                         FileSaveName,
-                        emailByteArr,
-                        publicKey,
-                        (PaddingMode)this.EncryptInfo.PaddingMode,
-                        (CipherMode)this.EncryptInfo.CipherMode
-                        );
-                    break;
-                case Algorithm.DES:
-                    break;
-                case Algorithm.TripleDES:
-                    break;
-                case Algorithm.RC2:
-                    break;
-                case Algorithm.Rijndael:
-                    break;
+                        this.EncryptInfo,
+                        publicKey);
             }
+            catch (Exception ex)
+            {
+                this.WarningMessage = "There was an error when encrypting file.";
+                return false;
+            }
+
+            return true;
         }
 
-        public byte[] GetReceiverPublicKey(string email)
+        public string GetReceiverPublicKey(string email)
         {
             var encodedEmail = Convert.ToBase64String(Encoding.UTF8.GetBytes(email));
             var filePath = Path.Combine(DatabaseDir, encodedEmail);
             filePath = Path.ChangeExtension(filePath, "xml");
             var user = XmlService.ReadFromXml<UserDto>(filePath);
             var publicKey = Convert.FromBase64String(user.PublicKey);
-            return publicKey;
+            return Encoding.UTF8.GetString(publicKey);
         }
 
         public bool Validate()
         {
-            return true;
+            var result = true;
+            var message = new StringBuilder();
+
+            if (string.IsNullOrWhiteSpace(this.FileEncryptName))
+            {
+                message.AppendLine("File encrypt location field is missing.");
+                result = false;
+            }
+            if (string.IsNullOrWhiteSpace(this.FileSaveName))
+            {
+                message.AppendLine("File save location field is missing.");
+                result = false;
+            }
+
+            this.WarningMessage = message.ToString();
+            return result;
         }
     }
 }

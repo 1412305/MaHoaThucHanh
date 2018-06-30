@@ -15,7 +15,7 @@ namespace DoAnThucHanh.App.Models
         private XmlService XmlService { get; set; }
         private RSAService RSAService { get; set; }
         private HashService HashService { get; set; }
-        private RijndaelService RijndaelService { get; set; }
+        private SymetricService SymetricService { get; set; }
         private static string DatabaseDir = Path.Combine(Environment.CurrentDirectory, "Database");
 
         public SignUpModel()
@@ -23,7 +23,7 @@ namespace DoAnThucHanh.App.Models
             XmlService = new XmlService();
             RSAService = new RSAService();
             HashService = new HashService();
-            RijndaelService = new RijndaelService();
+            SymetricService = new SymetricService();
 
             User = new UserDto();
             User.Salt = Guid.NewGuid().ToString();
@@ -63,9 +63,10 @@ namespace DoAnThucHanh.App.Models
 
                 var keyPair = RSAService.GenerateKeyPair((int)this.KeySize);
                 User.Passphrase = HashService.SHA256Hash(User.Passphrase, User.Salt);
-                User.PrivateKey = RijndaelService.RijndaelEncryptData(keyPair.PrivateKey,
+                User.IV = Convert.ToBase64String(SymetricService.RijndaelGenerateIV());
+                User.PrivateKey = SymetricService.RijndaelEncryptData(keyPair.PrivateKey,
                         Convert.FromBase64String(User.Passphrase),
-                        RijndaelService.RijndaelGenerateIV());
+                         Convert.FromBase64String(User.IV));
                 User.PublicKey = Convert.ToBase64String(Encoding.UTF8.GetBytes(keyPair.PublicKey));
 
                 XmlService.WriteToXml<UserDto>(filePath, User);

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserDto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name />
+  <Birth />
+  <Phone />
+  <Address />
+  <Email>luong@a.com</Email>
+  <Passphrase>lsrjXOipsCRBeL8o5JZsLOG4OFcjqWprg4hYzdbKCh4=</Passphrase>
+  <Salt>dbf4f27f-1741-4554-be9c-c08507b421e6</Salt>
+  <PublicKey>PFJTQUtleVZhbHVlPjxNb2R1bHVzPnd3WHphRFBtcjl6NEFsSU9wOHExN25vNVVKajc2bHBUcWVvcERWNWYweWVZREJFMXppQm8zNFN0aTlwenlNdksrNDZJQ1g0RzVyZldpeFo1MGx3TE1RPT08L01vZHVsdXM+PEV4cG9uZW50PkFRQUI8L0V4cG9uZW50PjwvUlNBS2V5VmFsdWU+</PublicKey>
+  <PrivateKey>j30Q6oZgMMTVxP7Gqv79RU4g1cqQ3cZcxxa1TyFg0rXQBzHnMSKMFV9j8B5pakaSRTkjw6XTHenGlFEhmq42tFyAokzEuujiB7iUD2XOpIUV6tA4CcahVUgPdRjiKLyACOVQ0URBiQNLRkQhgGg0FmzWQRTdyXfRG9DBFfQU9CzbHH1ZiplNk8+KYfS//uJnJZ10N3SiinTqXfsQKEY6t3uHjvel8bXpoHeUAJh5mJ3Vsa0TuxSI/2EmD4uBx18Lxr7SWnR5Ni7Zw6y9wb+Id+CYR3mdTlm3dSjNMt6X2UbGR8WC55dgqk3+TEwzaXZtkpd9R2vPTlaIEVNcG77/0LMTXkGBBzu70RV/nz5c6gTzONbdZwZvtL/MnpvjKvr3siqybHon+cV88WVG5PiVOw1IhGC1xnGjF172S35z+9zZSxfA8k8TpPA7c5we7dP4lnHvqc1cwGbAkGY7wYiiAMMZblEfQM0wQtw6larKYCgHUGQ/aCJ+6XiHfOqvzS9li1EaxNk7QIqbLzyL8AGRfPNQ/SxYFLzv3v5uaV0z5xUpgn9nJQ/UwMR3qEONKdokQChvDVdd3TDedw3iCgFsRQzNClWJH2GjOhKAj1QDxNrT3lO5cB1kPKg1MQM7kvziSWm4qpWRrcv78ePMT6mQy2rdNZUd8op0/NJzpsE6NvaORMQFFYbkDgoarctF8T+h</PrivateKey>
+  <IV>6yL/bXRMN/7gtdUZJddBdw==</IV>
+</UserDto>
